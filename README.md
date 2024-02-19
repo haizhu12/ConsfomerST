@@ -30,22 +30,10 @@ Download checkpoints, put it into chickpoints.
 提取码：**2ij2** .
 Download checkpoints, put it into models.
 
-6. You can edit your own images:
+## Model Training  
+- Download the content dataset: [MS-COCO](https://cocodataset.org/#download).
+- Download the style dataset: [WikiArt](https://www.kaggle.com/c/painter-by-numbers).
 ```bash
-python edit_cli.py --input example.jpg --edit "Transform it to van Gogh, starry night style."
-
-# Optionally, you can customize the parameters by using the following syntax: 
-# --resolution 512 --steps 50 --config configs/instruct_diffusion.yaml --ckpt YOUR_CHECKPOINT --cfg-text 3.5 --cfg-image 1.25
-
-# We also support loading image from the website and edit, e.g., you could run the command like this:
-python edit_cli.py --input "https://wallup.net/wp-content/uploads/2016/01/207131-animals-nature-lion.jpg" \
-   --edit "Transform it to van Gogh, starry night style." \
-   --resolution 512 --steps 50 \
-   --config configs/instruct_diffusion.yaml \
-   --ckpt checkpoints/v1-5-pruned-emaonly-adaption-task-humanalign.ckpt \
-   --outdir logs/
-```
-For other different tasks, we provide recommended parameter settings, which can be found in [`scripts/inference_example.sh`](./scripts/inference_example.sh).
 
 5. (Optional) You can launch your own interactive editing Gradio app:
 ```bash
