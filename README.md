@@ -19,12 +19,14 @@ Follow the steps below to quickly edit your own images. The inference code in ou
 1. Clone this repo.
 2. Setup conda environment:
    ```
-   conda env create -f environment.yaml
-   conda activate instructdiff
+   conda create -n consformerST python=3.8
+   conda activate consformerST
    ```
-3. We provide a well-trained [checkpoint](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EZmXduulFidIhJD73SGcbOoBNpm18CJmU4PgPTS21RM2Ow?e=KqQYpO) and a [checkpoint](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EWlNmyeS9P1BkRg_IlXbPbwBeNMQXQTcIA0pCokyd61UWg?e=iKfRdk) that has undergone human-alignment. Feel free to download to the folder `checkpoints` and try both of them. Or you can download pre-trained models through `bash scripts/download_pretrained_instructdiffusion.sh`.
+3. We provide a well-trained [checkpoints](https://pan.baidu.com/s/13-l1Jcz340MjT3RBAS_9sA?pwd=81y1)  提取码：81y1
+Download checkpoints, put it into chickpoints.
+ [models](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EWlNmyeS9P1BkRg_IlXbPbwBeNMQXQTcIA0pCokyd61UWg?e=iKfRdk) that has undergone human-alignment. Feel free to download to the folder `checkpoints` and try both of them. Or you can download pre-trained models through `bash scripts/download_pretrained_instructdiffusion.sh`.
 
-4. You can edit your own images:
+5. You can edit your own images:
 ```bash
 python edit_cli.py --input example.jpg --edit "Transform it to van Gogh, starry night style."
 
