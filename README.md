@@ -11,10 +11,10 @@
   <img src="figure/teaser.png" width="1000"/>
 </div>
 
-This is the pytorch implementation of InstructDiffusion, a unifying and generic framework for aligning computer vision tasks with human instructions. Our code is based on the [Instruct-pix2pix](https://github.com/timothybrooks/instruct-pix2pix) and [CompVis/stable_diffusion](https://github.com/CompVis/stable-diffusion).<br>
+This is a pytorch implementation of consformerST, a unified general-purpose framework for coordinating computer vision tasks with human instructions.[STYTR2](https://github.com/diyiiyiii/StyTR-2),[QuantArt](https://github.com/siyuhuang/QuantArt) and [IEContraAST](https://github.com/HalbertCH/IEContraAST).<br>
 
 ## QuickStart
-Follow the steps below to quickly edit your own images. The inference code in our repository requires **one GPU with > 9GB memory** to test images with a resolution of **512**.
+Follow the steps below to quickly edit your own images. The inference code in our repository requires **one GPU with > 24GB memory** to test images with a resolution of **256**.
 
 1. Clone this repo.
 2. Setup conda environment:
