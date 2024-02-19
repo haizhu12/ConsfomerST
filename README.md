@@ -22,9 +22,10 @@ Follow the steps below to quickly edit your own images. The inference code in ou
    conda create -n consformerST python=3.8
    conda activate consformerST
    ```
-3. We provide a well-trained [checkpoints](https://pan.baidu.com/s/13-l1Jcz340MjT3RBAS_9sA?pwd=81y1)  提取码：81y1
+3. We provide a well-trained [checkpoints](https://pan.baidu.com/s/13-l1Jcz340MjT3RBAS_9sA?pwd=81y1)  提取码：**81y1**
 Download checkpoints, put it into chickpoints.
- [models](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EWlNmyeS9P1BkRg_IlXbPbwBeNMQXQTcIA0pCokyd61UWg?e=iKfRdk) that has undergone human-alignment. Feel free to download to the folder `checkpoints` and try both of them. Or you can download pre-trained models through `bash scripts/download_pretrained_instructdiffusion.sh`.
+ [models](链接：https://pan.baidu.com/s/14in-oWN3UeAXkb5p6Fe66g?pwd=2ij2) 提取码：**2ij2** .
+Download checkpoints, put it into models.
 
 5. You can edit your own images:
 ```bash
@@ -83,39 +84,16 @@ For multi-GPU training on multiple machines, you can use the following command (
    bash run_multinode.sh instruct_diffusion v0 6
    ```
 
-### Convert EMA-Model
-You can get the final EMA checkpoint for inference using the command below:
-   ```
-   python convert_ckpt.py --ema-ckpt logs/instruct_diffusion/checkpoint/ckpt_epoch_200/state.pth --out-ckpt checkpoints/v1-5-pruned-emaonly-adaption-task.ckpt
-   ```
-
 ## Acknowledge
 
 Thanks to 
-- [Stable-diffusion](https://github.com/CompVis/stable-diffusion)
+- [QuantArt](https://github.com/siyuhuang/QuantArt)
 - [Instruct-pix2pix](https://github.com/timothybrooks/instruct-pix2pix)
+- [STYTR2](https://github.com/diyiiyiii/StyTR-2)
 
 ## Citation
 
 ```
-@article{Geng23instructdiff,
-  author       = {Zigang Geng and
-                  Binxin Yang and
-                  Tiankai Hang and
-                  Chen Li and
-                  Shuyang Gu and
-                  Ting Zhang and
-                  Jianmin Bao and
-                  Zheng Zhang and
-                  Han Hu and
-                  Dong Chen and
-                  Baining Guo},
-  title        = {InstructDiffusion: {A} Generalist Modeling Interface for Vision Tasks},
-  journal      = {CoRR},
-  volume       = {abs/2309.03895},
-  year         = {2023},
-  url          = {https://doi.org/10.48550/arXiv.2309.03895},
-  doi          = {10.48550/arXiv.2309.03895},
-}
+noon
 ```
 
