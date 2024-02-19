@@ -1,13 +1,10 @@
 # Joint Transformer and Contrast Learning for Subject-driven Image Style Transfer
 
 <p align="center">
-  <a href="https://gengzigang.github.io/instructdiffusion.github.io/">Project Page</a> |
-  <a href="https://arxiv.org/pdf/2309.03895.pdf">Arxiv</a> |
-  <a href="https://98cfca87ef8aed4a6b.gradio.live">Web Demo</a> |
+  <a href="https://github.com/haizhu12/HumSTN">Project Page</a> |
   <a href="#QuickStart">QuickStart</a> |
   <a href="#Training">Training</a> |
   <a href="#Acknowledge">Acknowledge</a> |
-  <a href='#Citation'>Citation</a> 
 </p>
 
 <div align="center">
