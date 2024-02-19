@@ -1,0 +1,8 @@
+dominate
+visdom
+packaging
+GPUtil
+scipy
+Pillow
+numpy
+kornia
