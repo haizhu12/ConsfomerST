@@ -46,8 +46,10 @@ Download checkpoints, put it into models.
 
 
 **You can also specify the path to the checkpoint**
+
 **The default checkpoint is style_vgg.pth**
- **VGG Module：vgg_normalised.pth**
+
+**VGG Module：vgg_normalised.pth**
 
 6.Main implementation framework
 ![main](https://github.com/haizhu12/ConsfomerST/assets/93024130/98a54aa5-08a6-4de8-a2bc-084083c35246)
@@ -86,10 +88,14 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
 3. Setup conda environment:
    ```
    1.conda create -n consformerST
+   
    2.conda activate consformerST
+   
    3.pip install -r requirements.txt
+   
    4.pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
    ```
+
 pytorch：[pytorch](https://pytorch.org/get-started/previous-versions/)
 
 **Execute a command**
