@@ -34,11 +34,17 @@ Download checkpoints, put it into models.
 
 ## Model Training  
 - Download the content dataset: [MS-COCO](https://cocodataset.org/#download).
+- Download the content dataset: [Celeba-HQ](https://paperswithcode.com/dataset/celeba-hq).
 - Download the style dataset: [WikiArt](https://www.kaggle.com/c/painter-by-numbers).
+
 ```bash
 
-5. (Optional) You can launch your own interactive editing Gradio app:
+5. (Optional) Some experimental results app:
 ```bash
+![162_fake_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/8165245b-b3e9-40a6-a434-1c3b602da13a)![162_real_A](https://github.com/haizhu12/ConsfomerST/assets/93024130/4f3dd142-26f8-44de-88c3-6227088ec725)![162_real_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/f9559d0f-193a-4947-821a-3d2dd42b7c51)
+
+
+
 python edit_app.py 
 
 # You can also specify the path to the checkpoint
