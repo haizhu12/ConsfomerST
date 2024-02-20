@@ -41,19 +41,18 @@ Download checkpoints, put it into models.
 
 5. (Optional) Some experimental results app:
    
-![162_fake_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/82e08fec-0edc-46c8-867b-5cfa096783f6)
-![162_real_A](https://github.com/haizhu12/ConsfomerST/assets/93024130/67bbd063-55c7-4806-81eb-016afa84a452)
-![162_real_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/2ded956a-78e1-4bdd-a420-d1426855f5d0)
+![qualitative](https://github.com/haizhu12/ConsfomerST/assets/93024130/c8cf0fcf-65ee-4cc7-a086-83ab6d776410)
 
 
 
+**You can also specify the path to the checkpoint**
+**The default checkpoint is style_vgg.pth**
+ **VGG Module：vgg_normalised.pth**
 
 6.Main implementation framework
 ![main](https://github.com/haizhu12/ConsfomerST/assets/93024130/98a54aa5-08a6-4de8-a2bc-084083c35246)
 
-## You can also specify the path to the checkpoint
-## The default checkpoint is style_vgg.pth
-## VGG Module：vgg_normalised.pth
+
 
 
 ## Training
@@ -86,10 +85,18 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
 <p align="right">(<a href="#top">back to top</a>)</p>
 3. Setup conda environment:
    ```
-   conda create -n consformerST
-   conda activate consformerST
+   1.conda create -n consformerST
+   2.conda activate consformerST
+   3.pip install -r requirements.txt
+   4.pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
    ```
+pytorch：[pytorch](https://pytorch.org/get-started/previous-versions/)
 
+**Execute a command**
+   ```sh
+   python train.py --dataroot ./datasets/{dataset_name} --name {model_name}
+   ```
+   
 ### Pre-trained Model Preparation
 You can use the following command to download the official pre-trained stable diffusion model, or you can download the model trained by our pretraining adaptation process from [OneDrive](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EXJSMIpFev5Nj0kuKI88U1IBZDSjegp3G8ukku0OxRRjFQ?e=QhnnB4) and put it into the following folder: stable_diffusion/models/ldm/stable-diffusion-v1/.
    ```
