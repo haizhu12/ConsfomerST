@@ -37,20 +37,24 @@ Download checkpoints, put it into models.
 - Download the content dataset: [Celeba-HQ](https://paperswithcode.com/dataset/celeba-hq).
 - Download the style dataset: [WikiArt](https://www.kaggle.com/c/painter-by-numbers).
 
-```bash
+
 
 5. (Optional) Some experimental results app:
-```bash
-![162_fake_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/8165245b-b3e9-40a6-a434-1c3b602da13a)![162_real_A](https://github.com/haizhu12/ConsfomerST/assets/93024130/4f3dd142-26f8-44de-88c3-6227088ec725)![162_real_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/f9559d0f-193a-4947-821a-3d2dd42b7c51)
+   
+![162_fake_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/82e08fec-0edc-46c8-867b-5cfa096783f6)
+![162_real_A](https://github.com/haizhu12/ConsfomerST/assets/93024130/67bbd063-55c7-4806-81eb-016afa84a452)
+![162_real_B](https://github.com/haizhu12/ConsfomerST/assets/93024130/2ded956a-78e1-4bdd-a420-d1426855f5d0)
 
 
 
-python edit_app.py 
 
-# You can also specify the path to the checkpoint
-# The default checkpoint is checkpoints/v1-5-pruned-emaonly-adaption-task-humanalign.ckpt
-python edit_app.py --ckpt checkpoints/v1-5-pruned-emaonly-adaption-task-humanalign.ckpt
-```
+6.Main implementation framework
+![main](https://github.com/haizhu12/ConsfomerST/assets/93024130/98a54aa5-08a6-4de8-a2bc-084083c35246)
+
+## You can also specify the path to the checkpoint
+## The default checkpoint is style_vgg.pth
+## VGG Module：vgg_normalised.pth
+
 
 ## Training
 The code is developed using python 3.8 on Ubuntu 20.04. The code is developed and tested using RTX3090 GPU cards, each with 24GB of memory. Other platforms are not fully tested.
