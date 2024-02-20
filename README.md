@@ -92,7 +92,7 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 3. Setup conda environment:
-   ```
+
    1.conda create -n consformerST
    
    2.conda activate consformerST
@@ -100,17 +100,18 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
    3.pip install -r requirements.txt
    
    4.pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
-   ```
 
-pytorch：[pytorch](https://pytorch.org/get-started/previous-versions/)
+
+  pytorch [pytorch](https://pytorch.org/get-started/previous-versions/)
 
 **Execute a command**
 
+### train
    ```sh
    python train.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
 
-### Test
+### test
 
    Test the CAST or UCAST model:
    
@@ -118,26 +119,17 @@ pytorch：[pytorch](https://pytorch.org/get-started/previous-versions/)
    python test.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
    
-   
-### Pre-trained Model Preparation
-You can use the following command to download the official pre-trained stable diffusion model, or you can download the model trained by our pretraining adaptation process from [OneDrive](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EXJSMIpFev5Nj0kuKI88U1IBZDSjegp3G8ukku0OxRRjFQ?e=QhnnB4) and put it into the following folder: stable_diffusion/models/ldm/stable-diffusion-v1/.
-   ```
-   bash scripts/download_pretrained_sd.sh
-   ```
+## Runtime Controls:
 
-### Data Preparation
-You can refer to the [dataset](https://github.com/cientgu/InstructDiffusion/tree/main/dataset) to prepare your data.
+**Content-style trade-off:**
 
-### Training Command
-For multi-GPU training on a single machine, you can use the following command:
-   ```
-   python -m torch.distributed.launch --nproc_per_node=8 main.py --name v0 --base configs/instruct_diffusion.yaml --train --logdir logs/instruct_diffusion
-   ```
+  `python test.py --content inputs/content/1.jpg --style inputs/style/1.jpg --alpha 0.5`
+  
+  ![show](https://github.com/EndyWon/AesUST/blob/main/figures/content_style_tradeoff.jpg)   
 
-For multi-GPU training on multiple machines, you can use the following command (assuming 6 machines as an example):
-   ```
-   bash run_multinode.sh instruct_diffusion v0 6
-   ```
+
+
+
 
 ## Acknowledge
 
