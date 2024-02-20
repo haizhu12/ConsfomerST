@@ -47,9 +47,15 @@ Download checkpoints, put it into models.
 
 **You can also specify the path to the checkpoint**
 
+[checkpoints](https://pan.baidu.com/s/13-l1Jcz340MjT3RBAS_9sA?pwd=81y1)
+
 **The default checkpoint is style_vgg.pth**
 
+Google Drive: Check [here](https://drive.google.com/file/d/12JKlL6QsVWkz6Dag54K59PAZigFBS6PQ/view?usp=sharing)
+
 **VGG Module：vgg_normalised.pth**
+
+Google Drive: Check [here](https://drive.google.com/file/d/1DKYRWJUKbmrvEba56tuihy1N6VrNZFwl/view?usp=sharing)
 
 6.Main implementation framework
 ![main](https://github.com/haizhu12/ConsfomerST/assets/93024130/98a54aa5-08a6-4de8-a2bc-084083c35246)
@@ -99,9 +105,19 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
 pytorch：[pytorch](https://pytorch.org/get-started/previous-versions/)
 
 **Execute a command**
+
    ```sh
    python train.py --dataroot ./datasets/{dataset_name} --name {model_name}
    ```
+
+### Test
+
+   Test the CAST or UCAST model:
+   
+   ```sh
+   python test.py --dataroot ./datasets/{dataset_name} --name {model_name}
+   ```
+   
    
 ### Pre-trained Model Preparation
 You can use the following command to download the official pre-trained stable diffusion model, or you can download the model trained by our pretraining adaptation process from [OneDrive](https://mailustceducn-my.sharepoint.com/:u:/g/personal/aa397601_mail_ustc_edu_cn/EXJSMIpFev5Nj0kuKI88U1IBZDSjegp3G8ukku0OxRRjFQ?e=QhnnB4) and put it into the following folder: stable_diffusion/models/ldm/stable-diffusion-v1/.
