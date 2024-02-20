@@ -123,9 +123,10 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
 
 **Content-style trade-off:**
 
-  `python test.py --content inputs/content/1.jpg --style inputs/style/1.jpg --alpha 0.5`
+  `python test.py --content inputs/content/1.jpg --style inputs/style/1.jpg --phi 0.5`
   
-  ![show](https://github.com/EndyWon/AesUST/blob/main/figures/content_style_tradeoff.jpg)   
+![stylecontrol](https://github.com/haizhu12/ConsfomerST/assets/93024130/d9fad21b-0fd1-4322-9006-c76422e2c93c)
+
 
 
 
