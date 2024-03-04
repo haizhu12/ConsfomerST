@@ -25,11 +25,12 @@ Follow the steps below to quickly edit your own images. The inference code in ou
    conda activate consformerST
    ```
 3. We provide a well-trained [checkpoints](https://pan.baidu.com/s/13-l1Jcz340MjT3RBAS_9sA?pwd=81y1)
+ Extraction code：**81y1**
  
- 提取码：**81y1**
 Download checkpoints, put it into chickpoints.
  [models](https://pan.baidu.com/s/14in-oWN3UeAXkb5p6Fe66g?pwd=2ij2)
-提取码：**2ij2** .
+ Extraction code：**2ij2** .
+ 
 Download checkpoints, put it into models.
 
 ## Model Training  
@@ -87,7 +88,7 @@ The code is developed using python 3.8 on Ubuntu 20.04. The code is developed an
 ### Installation
    Clone the repo
    ```sh
-   git clone https://github.com/haizhu12/HumSTN
+   git clone https://github.com/haizhu12/ConsfomerST
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
