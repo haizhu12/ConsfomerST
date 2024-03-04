@@ -1,4 +1,4 @@
-# Joint Transformer and Contrast Learning for Subject-driven Image Style Transfer
+# Multilayer Transformer Sequence Prediction and Contrast Learning Training for Image Style Transfer
 
 <p align="center">
   <a href="https://github.com/haizhu12/HumSTN">Project Page</a> |
